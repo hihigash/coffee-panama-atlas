@@ -1,13 +1,19 @@
 import { Link } from 'react-router-dom'
 
-const stats = [
-  { label: 'Farms', value: '54+' },
-  { label: 'Regions', value: '3' },
-  { label: 'Varieties', value: '18+' },
-  { label: 'Record Price', value: '$10,005/kg' },
-] as const
+import { useFarms } from '../hooks/useFarms'
+import { useProducerGroups } from '../hooks/useProducerGroups'
 
 export default function HomePage() {
+  const farms = useFarms()
+  const producerGroups = useProducerGroups()
+
+  const stats = [
+    { label: 'Producers', value: producerGroups.length.toString() },
+    { label: 'Farms', value: farms.length.toString() },
+    { label: 'Regions', value: '3' },
+    { label: 'Record Price', value: '$30,204/kg' },
+  ] as const
+
   return (
     <div>
       <section className="bg-coffee-50 dark:bg-neutral-900">

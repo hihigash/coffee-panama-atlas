@@ -1,9 +1,9 @@
-import type { AuctionLot } from '../types/atlas'
+import type { AuctionLot } from '../types/coffee'
 
 export const auctionLots: AuctionLot[] = [
   {
     id: 'elida-2024',
-    farmId: 'elida-estate',
+    farmId: 'el-burro-estate',
     year: 2024,
     category: 'Best of Panama Geisha Natural',
     lot: 'El Burro Special',
@@ -23,7 +23,7 @@ export const auctionLots: AuctionLot[] = [
   },
   {
     id: 'esmeralda-2022',
-    farmId: 'la-esmeralda',
+    farmId: 'esmeralda-jaramillo',
     year: 2022,
     category: 'Best of Panama Geisha Washed',
     lot: 'Mario',
@@ -33,7 +33,7 @@ export const auctionLots: AuctionLot[] = [
   },
   {
     id: 'esmeralda-2021',
-    farmId: 'la-esmeralda',
+    farmId: 'esmeralda-jaramillo',
     year: 2021,
     category: 'Best of Panama Geisha Natural',
     lot: 'Caballeriza',
@@ -53,7 +53,7 @@ export const auctionLots: AuctionLot[] = [
   },
   {
     id: 'lerida-2020',
-    farmId: 'lerida-estate',
+    farmId: 'finca-lerida-estate',
     year: 2020,
     category: 'Best of Panama Geisha Washed',
     lot: 'Reserva',
@@ -73,7 +73,7 @@ export const auctionLots: AuctionLot[] = [
   },
   {
     id: 'mama-cata-2022',
-    farmId: 'mama-cata',
+    farmId: 'gallardo-nuguo',
     year: 2022,
     category: 'Best of Panama Varietal',
     lot: 'Volcán Ridge',
@@ -83,7 +83,7 @@ export const auctionLots: AuctionLot[] = [
   },
   {
     id: 'janson-2021',
-    farmId: 'janson-coffee',
+    farmId: 'janson-los-alpes',
     year: 2021,
     category: 'Best of Panama Geisha Washed',
     lot: 'Los Alpes',
@@ -92,18 +92,8 @@ export const auctionLots: AuctionLot[] = [
     buyer: 'Mikava Coffee',
   },
   {
-    id: 'hartmann-2020',
-    farmId: 'hartmann-estate',
-    year: 2020,
-    category: 'Best of Panama Varietal',
-    lot: 'Forest Gesha',
-    score: 91.6,
-    priceUsdPerKg: 66,
-    buyer: 'Kurasu Kyoto',
-  },
-  {
     id: 'auromar-2023',
-    farmId: 'auromar-estate',
+    farmId: 'auromar-la-aurora',
     year: 2023,
     category: 'Best of Panama Geisha Washed',
     lot: 'Candela Reserve',

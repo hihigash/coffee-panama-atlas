@@ -7,6 +7,7 @@ const HomePage = lazy(() => import('./pages/HomePage'))
 const AtlasPage = lazy(() => import('./pages/AtlasPage'))
 const MapPage = lazy(() => import('./pages/MapPage'))
 const FarmDetailPage = lazy(() => import('./pages/FarmDetailPage'))
+const ProducerGroupPage = lazy(() => import('./pages/ProducerGroupPage'))
 const RegionPage = lazy(() => import('./pages/RegionPage'))
 
 function LoadingSpinner() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/atlas" element={<AtlasPage />} />
             <Route path="/map" element={<MapPage />} />
             <Route path="/farms/:slug" element={<FarmDetailPage />} />
+            <Route path="/producers/:slug" element={<ProducerGroupPage />} />
             <Route path="/regions/:id" element={<RegionPage />} />
           </Route>
         </Routes>

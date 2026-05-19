@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 
+import { producerGroups } from '../../data/producerGroups'
 import { getRegionBadgeClassName, getRegionName } from '../../data/regions'
-import type { Farm } from '../../types/atlas'
+import type { Farm } from '../../types/coffee'
 
 interface FarmCardProps {
   farm: Farm
@@ -12,10 +13,12 @@ function formatAltitudeRange(min: number, max: number): string {
 }
 
 export function FarmCard({ farm }: FarmCardProps) {
+  const producerGroup = producerGroups.find((group) => group.id === farm.producerGroupId)
+
   return (
     <article className="overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
-      {farm.image ? (
-        <img src={farm.image} alt={farm.name} className="h-48 w-full object-cover" />
+      {farm.imageUrl ? (
+        <img src={farm.imageUrl} alt={farm.name} className="h-48 w-full object-cover" />
       ) : (
         <div className="flex h-48 items-center justify-center bg-linear-to-br from-coffee-100 via-coffee-200 to-coffee-500 text-5xl text-coffee-900 dark:from-coffee-900 dark:via-coffee-800 dark:to-coffee-600 dark:text-coffee-100">
           ☕
@@ -25,16 +28,32 @@ export function FarmCard({ farm }: FarmCardProps) {
       <div className="space-y-4 p-6">
         <div className="space-y-2">
           <div className="flex flex-wrap items-center gap-2">
-            <span className={getRegionBadgeClassName(farm.regionId)}>{getRegionName(farm.regionId)}</span>
+            <span className={getRegionBadgeClassName(farm.region)}>{getRegionName(farm.region)}</span>
           </div>
           <div>
             <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">{farm.name}</h3>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">{farm.producer}</p>
+            {producerGroup ? (
+              <Link
+                to={`/producers/${producerGroup.slug}`}
+                className="text-sm text-neutral-600 transition hover:text-coffee-700 dark:text-neutral-400 dark:hover:text-coffee-300"
+              >
+                {producerGroup.name}
+              </Link>
+            ) : (
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">Unknown producer</p>
+            )}
           </div>
         </div>
 
         <div className="space-y-2 text-sm text-neutral-600 dark:text-neutral-300">
-          <p>{formatAltitudeRange(farm.altitude.min, farm.altitude.max)}</p>
+          <div className="flex flex-wrap items-center gap-2">
+            <p>{formatAltitudeRange(farm.altitude.minMASL, farm.altitude.maxMASL)}</p>
+            {farm.blocks.length > 0 && (
+              <span className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+                {farm.blocks.length} {farm.blocks.length === 1 ? 'block' : 'blocks'}
+              </span>
+            )}
+          </div>
           <div className="flex flex-wrap gap-2">
             {farm.varieties.slice(0, 3).map((variety) => (
               <span

@@ -12,7 +12,7 @@ export default function RegionPage() {
 
   const region = useMemo(() => regions.find((item) => item.id === id), [id, regions])
   const notableFarms = useMemo(
-    () => (region ? farms.filter((farm) => farm.regionId === region.id) : []),
+    () => (region ? farms.filter((farm) => farm.region === region.id) : []),
     [farms, region],
   )
 
@@ -51,7 +51,7 @@ export default function RegionPage() {
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr,0.8fr]">
         <section className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
           <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">Climate</h2>
-          <p className="mt-4 text-neutral-600 dark:text-neutral-300">{region.climate}</p>
+          <p className="mt-4 text-neutral-600 dark:text-neutral-300">{region.climateNotes}</p>
         </section>
 
         <section className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">

@@ -56,46 +56,66 @@ export interface SocialLinks {
   youtube?: string
 }
 
+export type RegionId = PanamaRegionId
+
+export type ProducerGroupType = 'family' | 'company' | 'individual' | 'cooperative'
+
+export interface ProducerGroup {
+  id: string
+  name: string
+  slug: string
+  type: ProducerGroupType
+  principals: string[]
+  description: string
+  region: PanamaRegionId
+  websiteUrl: string | null
+  socialLinks: SocialLinks
+  email: string | null
+  phone: string | null
+  scapMember: boolean
+  scapProfileUrl: string
+  imageUrl: string | null
+  established: number | null
+  farmIds: string[]
+}
+
+export interface FarmBlock {
+  name: string
+  altitude: AltitudeRange | null
+  varieties: string[]
+  notes: string | null
+}
+
 export interface Farm {
   id: string
   name: string
   slug: string
-  producerName: string
+  producerGroupId: string
   region: PanamaRegionId
   subRegion: string
   coordinates: Coordinates
   altitude: AltitudeRange
-  varieties: VarietyId[]
-  processingMethods: ProcessingMethodId[]
+  varieties: string[]
+  processingMethods: string[]
   farmSizeHa: number | null
   certifications: string[]
-  websiteUrl: string | null
-  socialLinks: SocialLinks
-  scapMember: boolean
   description: string
-  farmBlocks: string[]
+  blocks: FarmBlock[]
   imageUrl: string | null
   established: number | null
+  cupCharacter: string | null
   auctionLotIds: string[]
 }
 
 export interface AuctionLot {
   id: string
-  year: number
-  category: BOPCategory
-  lotNumber: number
   farmId: string
-  lotName: string | null
-  variety: VarietyId
-  processingMethod: ProcessingMethodId
+  year: number
+  category: string
+  lot: string
   score: number
-  weightLbs: number
-  pricePerLbUSD: number
-  totalValueUSD: number
-  buyers: string[]
-  placement: number | null
-  altitudeMASL: number | null
-  tastingNotes: string[]
+  priceUsdPerKg: number
+  buyer: string
 }
 
 export interface Region {
