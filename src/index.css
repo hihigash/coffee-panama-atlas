@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@source "../../node_modules/preline/dist";
+
+@theme {
+  --color-coffee-50: #FEF3C7;
+  --color-coffee-100: #FDE68A;
+  --color-coffee-200: #FCD34D;
+  --color-coffee-300: #FBBF24;
+  --color-coffee-400: #F59E0B;
+  --color-coffee-500: #D97706;
+  --color-coffee-600: #B45309;
+  --color-coffee-700: #92400E;
+  --color-coffee-800: #78350F;
+  --color-coffee-900: #451A03;
+
+  --color-region-boquete: #166534;
+  --color-region-tierras: #B45309;
+  --color-region-renacimiento: #1E40AF;
+}
