@@ -1,0 +1,73 @@
+[
+  {
+    "id": "boquete",
+    "name": "Boquete",
+    "description": "Panama's most famous coffee district on the eastern slopes of Volcán Barú. The unique micro-climate — driven by cool trade winds and the daily 'bajareque' mist — creates ideal conditions for slow cherry development.",
+    "district": "Boquete",
+    "province": "Chiriquí",
+    "center": { "lat": 8.78, "lng": -82.44 },
+    "altitude": { "minMASL": 1200, "maxMASL": 2100 },
+    "climateClassification": "Cfb",
+    "climateNotes": "Cool trade winds and daily bajareque mist moderate temperature swings and extend cherry maturation on the eastern slopes of Volcán Barú.",
+    "terroir": [
+      "Bajareque horizontal mist",
+      "Volcanic basalt soils",
+      "Caldera River watershed",
+      "Eastern Barú slopes with afternoon cloud cover"
+    ],
+    "notableFarms": [
+      "hacienda-la-esmeralda",
+      "elida-estate",
+      "finca-lerida",
+      "cafe-kotowa",
+      "janson-coffee-farm"
+    ]
+  },
+  {
+    "id": "tierras-altas",
+    "name": "Tierras Altas",
+    "description": "The western slopes of Volcán Barú, encompassing Volcán, Cerro Punta, and Bambito. Drier and windier with some of Panama's highest coffee growing ground above 2,000 MASL.",
+    "district": "Tierras Altas",
+    "province": "Chiriquí",
+    "center": { "lat": 8.8053, "lng": -82.559 },
+    "altitude": { "minMASL": 1300, "maxMASL": 2200 },
+    "climateClassification": "Cfb",
+    "climateNotes": "Exposure to Pacific-seasonality, wind, and high-elevation plateaus produces a drier mountain climate with some of Panama's highest coffee farms.",
+    "terroir": [
+      "Western Barú volcanic slopes",
+      "Chiriquí Viejo River watershed",
+      "Cerro Punta plateau above 2,000 MASL",
+      "Pacific-dominant dry season"
+    ],
+    "notableFarms": [
+      "finca-deborah",
+      "finca-sophia",
+      "carmen-estate-coffee",
+      "bambito-estate-coffee",
+      "finca-los-cenizos"
+    ]
+  },
+  {
+    "id": "renacimiento",
+    "name": "Renacimiento",
+    "description": "Panama's northwestern-most coffee district bordering Costa Rica. Caribbean moisture influence produces a more humid environment. Home to Finca Hartmann and exceptional biodiversity alongside primary rainforest fragments.",
+    "district": "Renacimiento",
+    "province": "Chiriquí",
+    "center": { "lat": 8.82, "lng": -82.86 },
+    "altitude": { "minMASL": 900, "maxMASL": 1700 },
+    "climateClassification": "Am",
+    "climateNotes": "Caribbean moisture and shade-cooled valleys create a more humid mesoclimate with slower drying and abundant biodiversity near forest fragments.",
+    "terroir": [
+      "Caribbean moisture influence",
+      "Rich primary-forest adjacent soils",
+      "Santa Clara valley microclimate",
+      "Lower elevation cooled by shade"
+    ],
+    "notableFarms": [
+      "finca-hartmann",
+      "finca-aguilar-peralta",
+      "finca-bernardina",
+      "las-brumas-panama"
+    ]
+  }
+]

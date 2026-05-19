@@ -1,22 +1,11 @@
-import { StrictMode, useEffect } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import 'preline/preline'
 
-function PrelineWrapper({ children }: { children: React.ReactNode }) {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.HSStaticMethods) {
-      window.HSStaticMethods.autoInit()
-    }
-  }, [])
-  return <>{children}</>
-}
+import App from './App'
+import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <PrelineWrapper>
-      <App />
-    </PrelineWrapper>
+    <App />
   </StrictMode>,
 )

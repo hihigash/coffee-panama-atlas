@@ -1,0 +1,110 @@
+[
+  {
+    "id": "washed",
+    "name": "Washed (Wet Process)",
+    "parentMethodId": null,
+    "description": "Removes the fruit layer before drying to emphasize transparency, acidity, and terroir clarity.",
+    "flavorImpact": "Typically clean, bright, and floral with a transparent cup structure.",
+    "typicalFlavorNotes": ["clean", "bright", "floral"],
+    "variations": ["Double washed", "Kenyan-style washed", "Soaked washed"]
+  },
+  {
+    "id": "natural",
+    "name": "Natural (Dry Process)",
+    "parentMethodId": null,
+    "description": "Coffee is dried inside the whole cherry, allowing sugars and fruit compounds to infuse the seed during drying.",
+    "flavorImpact": "Typically fruity, winey, and heavier bodied than washed coffees.",
+    "typicalFlavorNotes": ["fruity", "winey", "heavy body"],
+    "variations": ["Raised-bed natural", "Slow-dried natural", "Shade-dried natural"]
+  },
+  {
+    "id": "honey-yellow",
+    "name": "Yellow Honey",
+    "parentMethodId": "semi-washed",
+    "description": "Around 25% mucilage is retained during drying for a lightly sweet, approachable honey profile.",
+    "flavorImpact": "Sweet and mild with more roundness than fully washed coffees.",
+    "typicalFlavorNotes": ["sweet", "mild", "rounded"],
+    "variations": ["Fast yellow honey", "Patio yellow honey"]
+  },
+  {
+    "id": "honey-red",
+    "name": "Red Honey",
+    "parentMethodId": "semi-washed",
+    "description": "About 50% mucilage retention increases sweetness and fruit expression while preserving clarity.",
+    "flavorImpact": "Sweeter and fruitier than yellow honey with balanced body.",
+    "typicalFlavorNotes": ["red fruit", "syrupy sweetness", "balanced"],
+    "variations": ["Shade-dried red honey", "Raised-bed red honey"]
+  },
+  {
+    "id": "honey-black",
+    "name": "Black Honey",
+    "parentMethodId": "semi-washed",
+    "description": "Roughly 75-100% mucilage is left on the parchment and dried slowly for maximum sugar concentration.",
+    "flavorImpact": "Intense sweetness, dense body, and jammy complexity.",
+    "typicalFlavorNotes": ["intense sweetness", "jammy fruit", "dense body"],
+    "variations": ["Slow black honey", "Covered black honey"]
+  },
+  {
+    "id": "honey-white",
+    "name": "White Honey",
+    "parentMethodId": "semi-washed",
+    "description": "Minimal mucilage retention produces the cleanest and most delicate expression within honey processing.",
+    "flavorImpact": "Cleanest honey profile with gentle sweetness and light body.",
+    "typicalFlavorNotes": ["clean", "subtle sweetness", "light body"],
+    "variations": ["High-altitude white honey", "Washed-leaning white honey"]
+  },
+  {
+    "id": "anaerobic-natural",
+    "name": "Anaerobic Natural",
+    "parentMethodId": "natural",
+    "description": "Whole cherries ferment in oxygen-free tanks before drying as naturals.",
+    "flavorImpact": "Can create intense fruit, lactic complexity, and controlled funk.",
+    "typicalFlavorNotes": ["intense fruit", "funk", "lactic"],
+    "variations": ["Cold anaerobic natural", "Thermal-shock anaerobic natural"]
+  },
+  {
+    "id": "anaerobic-washed",
+    "name": "Anaerobic Washed",
+    "parentMethodId": "washed",
+    "description": "Depulped coffee undergoes oxygen-free fermentation before being washed and dried.",
+    "flavorImpact": "Adds enhanced complexity to a washed framework while retaining clarity.",
+    "typicalFlavorNotes": ["enhanced complexity", "bright fruit", "structured acidity"],
+    "variations": ["Sealed-tank washed", "Cultured anaerobic washed"]
+  },
+  {
+    "id": "double-anaerobic",
+    "name": "Double Anaerobic",
+    "parentMethodId": "anaerobic-natural",
+    "description": "Two distinct anaerobic fermentation stages are applied to push aromatic intensity and texture.",
+    "flavorImpact": "Extreme complexity with layered fermentation character and dense sweetness.",
+    "typicalFlavorNotes": ["extreme complexity", "layered fermentation", "dense sweetness"],
+    "variations": ["Cherry + parchment double anaerobic", "Sequential tank double anaerobic"]
+  },
+  {
+    "id": "carbonic-maceration",
+    "name": "Carbonic Maceration",
+    "parentMethodId": "anaerobic-natural",
+    "description": "Whole cherries ferment in a CO2-rich atmosphere to encourage juicy esters and aromatic lift.",
+    "flavorImpact": "Often tropical, candy-like, and perfumed with vivid fruit character.",
+    "typicalFlavorNotes": ["tropical", "candy-like", "perfumed"],
+    "variations": ["Carbonic natural", "Carbonic washed finish"]
+  },
+  {
+    "id": "extended-fermentation-washed",
+    "name": "Extended Fermentation Washed",
+    "parentMethodId": "washed",
+    "description": "Washed coffees fermented for roughly 60-120 hours before final rinsing and drying.",
+    "flavorImpact": "Adds depth and complexity to a clean washed cup profile.",
+    "typicalFlavorNotes": ["depth", "complexity", "structured sweetness"],
+    "variations": ["Cold extended fermentation", "Yeast-inoculated washed"]
+  },
+  {
+    "id": "semi-washed",
+    "name": "Semi-Washed (Pulped Natural)",
+    "parentMethodId": null,
+    "description": "Coffee is partially depulped and dried with some mucilage retained, bridging washed and natural styles.",
+    "flavorImpact": "Balanced sweetness with moderate body and preserved clarity.",
+    "typicalFlavorNotes": ["balanced sweetness", "moderate body", "clean fruit"],
+    "variations": ["Brazilian pulped natural", "Mechanical demucilage semi-washed"]
+  }
+]

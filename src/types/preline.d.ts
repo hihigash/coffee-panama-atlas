@@ -1,7 +1,9 @@
+type PrelineStaticMethods = typeof import('preline').HSStaticMethods
+
 export {}
 
 declare global {
   interface Window {
-    HSStaticMethods: { autoInit: () => void }
+    HSStaticMethods?: PrelineStaticMethods
   }
 }

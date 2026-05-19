@@ -1,0 +1,272 @@
+[
+  {
+    "id": "gesha",
+    "name": "Gesha (Panamanian)",
+    "aliases": ["Geisha", "T2722"],
+    "origin": "Ethiopia",
+    "optimalAltitude": { "minMASL": 1700, "maxMASL": 2100 },
+    "qualityPotential": "exceptional",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "citrus", "stone fruit", "tropical fruit"],
+      "descriptors": ["jasmine", "bergamot", "peach", "tropical fruit"],
+      "body": "light-medium",
+      "acidity": "bright"
+    }
+  },
+  {
+    "id": "catuai-yellow",
+    "name": "Yellow Catuai",
+    "aliases": ["Catuaí Amarelo"],
+    "origin": "Brazilian Mundo Novo × Caturra hybrid",
+    "optimalAltitude": { "minMASL": 1200, "maxMASL": 1800 },
+    "qualityPotential": "medium",
+    "yieldPotential": "high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "fruit", "citrus"],
+      "descriptors": ["brown sugar", "apple", "citrus"],
+      "body": "medium",
+      "acidity": "balanced malic-citric"
+    }
+  },
+  {
+    "id": "catuai-red",
+    "name": "Red Catuai",
+    "aliases": ["Catuaí Vermelho"],
+    "origin": "Brazilian Mundo Novo × Caturra hybrid",
+    "optimalAltitude": { "minMASL": 1200, "maxMASL": 1800 },
+    "qualityPotential": "medium",
+    "yieldPotential": "high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "fruit", "citrus"],
+      "descriptors": ["brown sugar", "red apple", "orange zest"],
+      "body": "medium",
+      "acidity": "balanced malic-citric"
+    }
+  },
+  {
+    "id": "caturra",
+    "name": "Caturra",
+    "aliases": [],
+    "origin": "Brazilian Bourbon mutation",
+    "optimalAltitude": { "minMASL": 1200, "maxMASL": 1800 },
+    "qualityPotential": "medium-high",
+    "yieldPotential": "medium-high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "citrus", "nutty"],
+      "descriptors": ["caramel", "citrus", "hazelnut"],
+      "body": "medium",
+      "acidity": "lively and clean"
+    }
+  },
+  {
+    "id": "typica",
+    "name": "Typica",
+    "aliases": ["Arabigo"],
+    "origin": "Ethiopian/Yemeni heirloom",
+    "optimalAltitude": { "minMASL": 1300, "maxMASL": 1900 },
+    "qualityPotential": "high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "clean", "floral"],
+      "descriptors": ["clean", "sweet", "delicate"],
+      "body": "light",
+      "acidity": "refined and gentle"
+    }
+  },
+  {
+    "id": "bourbon-yellow",
+    "name": "Yellow Bourbon",
+    "aliases": ["Bourbon Amarelo"],
+    "origin": "Bourbon lineage selection",
+    "optimalAltitude": { "minMASL": 1300, "maxMASL": 1900 },
+    "qualityPotential": "high",
+    "yieldPotential": "medium",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "stone fruit", "citrus"],
+      "descriptors": ["honey", "yellow plum", "orange blossom"],
+      "body": "medium",
+      "acidity": "silky and sweet"
+    }
+  },
+  {
+    "id": "bourbon-red",
+    "name": "Red Bourbon",
+    "aliases": [],
+    "origin": "Bourbon lineage selection",
+    "optimalAltitude": { "minMASL": 1300, "maxMASL": 1900 },
+    "qualityPotential": "high",
+    "yieldPotential": "medium",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "red fruit", "chocolate"],
+      "descriptors": ["brown sugar", "red cherry", "milk chocolate"],
+      "body": "medium",
+      "acidity": "juicy and rounded"
+    }
+  },
+  {
+    "id": "mundo-novo",
+    "name": "Mundo Novo",
+    "aliases": [],
+    "origin": "Brazilian Bourbon × Typica hybrid",
+    "optimalAltitude": { "minMASL": 1100, "maxMASL": 1700 },
+    "qualityPotential": "medium-high",
+    "yieldPotential": "high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "chocolate", "nutty"],
+      "descriptors": ["cocoa", "roasted nuts", "caramel"],
+      "body": "medium-full",
+      "acidity": "mellow"
+    }
+  },
+  {
+    "id": "maragogipe",
+    "name": "Maragogipe",
+    "aliases": ["Elephant Bean"],
+    "origin": "Large-bean Typica mutation from Brazil",
+    "optimalAltitude": { "minMASL": 1300, "maxMASL": 1900 },
+    "qualityPotential": "high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "spice", "citrus"],
+      "descriptors": ["floral", "sweet spice", "orange"],
+      "body": "light-medium",
+      "acidity": "elegant"
+    }
+  },
+  {
+    "id": "pacamara",
+    "name": "Pacamara",
+    "aliases": [],
+    "origin": "El Salvador Pacas × Maragogipe hybrid",
+    "optimalAltitude": { "minMASL": 1300, "maxMASL": 1900 },
+    "qualityPotential": "high",
+    "yieldPotential": "medium",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["stone fruit", "chocolate", "complex"],
+      "descriptors": ["stone fruit", "dark chocolate", "complex"],
+      "body": "medium-full",
+      "acidity": "structured and juicy"
+    }
+  },
+  {
+    "id": "sl28",
+    "name": "SL28",
+    "aliases": [],
+    "origin": "Kenyan selection",
+    "optimalAltitude": { "minMASL": 1400, "maxMASL": 2100 },
+    "qualityPotential": "high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["berry", "winey", "complex"],
+      "descriptors": ["blackcurrant", "wine-like", "complex"],
+      "body": "medium",
+      "acidity": "vibrant and tartaric"
+    }
+  },
+  {
+    "id": "sl34",
+    "name": "SL34",
+    "aliases": [],
+    "origin": "Kenyan selection",
+    "optimalAltitude": { "minMASL": 1400, "maxMASL": 2100 },
+    "qualityPotential": "high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["berry", "citrus", "complex"],
+      "descriptors": ["blackcurrant", "grapefruit", "complex"],
+      "body": "medium-full",
+      "acidity": "bright and structured"
+    }
+  },
+  {
+    "id": "laurina",
+    "name": "Laurina (Bourbon Pointu)",
+    "aliases": ["Bourbon Pointu"],
+    "origin": "Réunion Bourbon mutation",
+    "optimalAltitude": { "minMASL": 1400, "maxMASL": 2000 },
+    "qualityPotential": "very-high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "sweet", "tea-like"],
+      "descriptors": ["jasmine", "honey", "delicate"],
+      "body": "light",
+      "acidity": "silky and refined"
+    }
+  },
+  {
+    "id": "marsellesa",
+    "name": "Marsellesa",
+    "aliases": [],
+    "origin": "Sarchimor-derived hybrid",
+    "optimalAltitude": { "minMASL": 1100, "maxMASL": 1700 },
+    "qualityPotential": "medium-high",
+    "yieldPotential": "high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "citrus", "herbal"],
+      "descriptors": ["caramel", "mandarin", "herbal tea"],
+      "body": "medium",
+      "acidity": "balanced"
+    }
+  },
+  {
+    "id": "obata",
+    "name": "Obata",
+    "aliases": [],
+    "origin": "Brazilian Timor Hybrid × Villa Sarchi line",
+    "optimalAltitude": { "minMASL": 1100, "maxMASL": 1700 },
+    "qualityPotential": "medium-high",
+    "yieldPotential": "high",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["sweet", "cocoa", "citrus"],
+      "descriptors": ["brown sugar", "cocoa", "orange"],
+      "body": "medium",
+      "acidity": "gentle and balanced"
+    }
+  },
+  {
+    "id": "ethiopia-landrace",
+    "name": "Ethiopian Wild Landrace",
+    "aliases": ["Heirloom Ethiopia"],
+    "origin": "Ethiopia",
+    "optimalAltitude": { "minMASL": 1500, "maxMASL": 2200 },
+    "qualityPotential": "high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "citrus", "spice"],
+      "descriptors": ["floral", "citrus peel", "tea spice"],
+      "body": "light-medium",
+      "acidity": "complex and sparkling"
+    }
+  },
+  {
+    "id": "sidra",
+    "name": "Sidra",
+    "aliases": ["Bourbon Sidra"],
+    "origin": "Ethiopian-Colombian selection",
+    "optimalAltitude": { "minMASL": 1450, "maxMASL": 2100 },
+    "qualityPotential": "very-high",
+    "yieldPotential": "medium-low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "citrus", "tropical fruit"],
+      "descriptors": ["orange blossom", "mandarin", "tropical fruit"],
+      "body": "light-medium",
+      "acidity": "crisp and elegant"
+    }
+  },
+  {
+    "id": "casiopia",
+    "name": "Casiopia",
+    "aliases": [],
+    "origin": "Ethiopia",
+    "optimalAltitude": { "minMASL": 1500, "maxMASL": 2100 },
+    "qualityPotential": "very-high",
+    "yieldPotential": "low",
+    "typicalFlavorProfile": {
+      "primaryCategories": ["floral", "stone fruit", "tea-like"],
+      "descriptors": ["white flowers", "apricot", "black tea"],
+      "body": "light-medium",
+      "acidity": "bright and layered"
+    }
+  }
+]

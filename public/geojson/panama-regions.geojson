@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "boquete", "name": "Boquete", "color": "#166534" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.44, 8.78]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "tierras-altas", "name": "Tierras Altas", "color": "#B45309" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.559, 8.8053]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "renacimiento", "name": "Renacimiento", "color": "#1E40AF" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.86, 8.82]
+      }
+    }
+  ]
+}
