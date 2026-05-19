@@ -5,20 +5,32 @@
 @source "../../node_modules/preline/dist";
 
 @theme {
-  --color-coffee-50: #FEF3C7;
-  --color-coffee-100: #FDE68A;
-  --color-coffee-200: #FCD34D;
-  --color-coffee-300: #FBBF24;
-  --color-coffee-400: #F59E0B;
-  --color-coffee-500: #D97706;
-  --color-coffee-600: #B45309;
-  --color-coffee-700: #92400E;
-  --color-coffee-800: #78350F;
-  --color-coffee-900: #451A03;
+  --color-brand-50:  #EDF2F7;
+  --color-brand-100: #D5E1ED;
+  --color-brand-200: #B0C7DA;
+  --color-brand-300: #83A7C2;
+  --color-brand-400: #5687A7;
+  --color-brand-500: #356D8C;
+  --color-brand-600: #234E70;
+  --color-brand-700: #1C3E59;
+  --color-brand-800: #172F44;
+  --color-brand-900: #11222F;
+  --color-brand-950: #0B1620;
 
-  --color-region-boquete: #166534;
-  --color-region-tierras: #B45309;
-  --color-region-renacimiento: #1E40AF;
+  --color-gold-50:  #FBF8F0;
+  --color-gold-100: #F5ECD4;
+  --color-gold-200: #EBDAAB;
+  --color-gold-300: #DFC49D;
+  --color-gold-400: #CBA258;
+  --color-gold-500: #B08D3E;
+  --color-gold-600: #937430;
+  --color-gold-700: #755B24;
+
+  --color-region-boquete: #2D5F3B;
+  --color-region-tierras: #8B6914;
+  --color-region-renacimiento: #1E3A6F;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -28,6 +40,9 @@ html {
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {

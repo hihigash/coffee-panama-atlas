@@ -55,9 +55,9 @@ const regionNames: Record<PanamaRegionId, string> = {
 }
 
 const regionBadgeClasses: Record<PanamaRegionId, string> = {
-  boquete: 'bg-region-boquete/15 text-region-boquete dark:bg-region-boquete/20 dark:text-green-200',
+  boquete: 'bg-region-boquete/15 text-region-boquete dark:bg-region-boquete/20 dark:text-emerald-200',
   'tierras-altas': 'bg-region-tierras/15 text-region-tierras dark:bg-region-tierras/20 dark:text-amber-200',
-  renacimiento: 'bg-region-renacimiento/15 text-region-renacimiento dark:bg-region-renacimiento/20 dark:text-blue-200',
+  renacimiento: 'bg-region-renacimiento/15 text-region-renacimiento dark:bg-region-renacimiento/20 dark:text-sky-200',
 }
 
 const regionFilterActiveClasses: Record<PanamaRegionId, string> = {
@@ -79,5 +79,5 @@ export function getRegionFilterClassName(regionId: PanamaRegionId, active: boole
     return `border-transparent ${regionFilterActiveClasses[regionId]}`
   }
 
-  return 'border-neutral-200 bg-white text-neutral-700 hover:border-coffee-200 hover:text-coffee-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-coffee-600 dark:hover:text-coffee-300'
+  return 'border-brand-200 bg-white text-brand-700 hover:border-brand-300 hover:text-brand-500 dark:border-brand-800 dark:bg-brand-900 dark:text-brand-200 dark:hover:border-brand-600 dark:hover:text-brand-300'
 }

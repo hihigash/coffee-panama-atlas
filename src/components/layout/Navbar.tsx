@@ -16,10 +16,10 @@ const navItems: NavItem[] = [
 
 function getNavLinkClassName(isActive: boolean): string {
   return [
-    'rounded-lg px-3 py-2 text-sm transition-colors',
+    'px-3 py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-200',
     isActive
-      ? 'font-semibold text-coffee-600 dark:text-coffee-300'
-      : 'text-neutral-700 hover:text-coffee-600 dark:text-neutral-200 dark:hover:text-coffee-300',
+      ? 'text-gold-400'
+      : 'text-white/70 hover:text-white',
   ].join(' ')
 }
 
@@ -29,35 +29,39 @@ export function Navbar() {
   usePreline([location.pathname])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-900/95">
-      <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-brand-950/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.2),0_1px_2px_rgba(0,0,0,0.1)]">
+      <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
         <Link
           to="/"
-          className="text-base font-semibold tracking-tight text-coffee-800 transition hover:text-coffee-600 dark:text-coffee-100 dark:hover:text-coffee-300"
+          className="font-display text-xl font-semibold tracking-tight text-gold-400 transition hover:text-gold-300 sm:text-2xl"
         >
-          ☕ Panama Coffee Atlas
+          Panama Coffee Atlas
         </Link>
 
         <div className="flex items-center gap-2 md:order-2">
           <button
             type="button"
-            className="hs-dark-mode inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 bg-white text-lg text-coffee-700 shadow-sm transition hover:bg-coffee-50 dark:hidden dark:border-neutral-700 dark:bg-neutral-800 dark:text-coffee-300"
+            className="hs-dark-mode inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/60 transition hover:border-white/40 hover:text-white dark:hidden"
             data-hs-theme-click-value="dark"
             aria-label="Enable dark mode"
           >
-            🌙
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-4 w-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
           </button>
           <button
             type="button"
-            className="hs-dark-mode hidden h-10 w-10 items-center justify-center rounded-full border border-neutral-700 bg-neutral-800 text-lg text-coffee-200 shadow-sm transition hover:bg-neutral-700 dark:inline-flex"
+            className="hs-dark-mode hidden h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/60 transition hover:border-white/40 hover:text-white dark:inline-flex"
             data-hs-theme-click-value="light"
             aria-label="Enable light mode"
           >
-            ☀️
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-4 w-4">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
           </button>
           <button
             type="button"
-            className="hs-collapse-toggle inline-flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-200 text-neutral-700 transition hover:bg-coffee-50 md:hidden dark:border-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-800"
+            className="hs-collapse-toggle inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/60 transition hover:border-white/40 hover:text-white md:hidden"
             id="navbar-collapse-toggle"
             aria-expanded="false"
             aria-controls="navbar-collapse"
@@ -66,7 +70,7 @@ export function Navbar() {
           >
             <span className="sr-only">Toggle navigation</span>
             <svg
-              className="h-5 w-5"
+              className="h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -83,7 +87,7 @@ export function Navbar() {
           className="hs-collapse hidden basis-full grow overflow-hidden transition-[height] duration-300 md:order-1 md:block md:basis-auto"
           aria-labelledby="navbar-collapse-toggle"
         >
-          <div className="mt-4 flex flex-col gap-2 border-t border-neutral-200 pt-4 md:mt-0 md:flex-row md:items-center md:justify-end md:border-t-0 md:pt-0 dark:border-neutral-800">
+          <div className="mt-4 flex flex-col gap-1 border-t border-white/10 pt-4 md:mt-0 md:flex-row md:items-center md:justify-end md:border-t-0 md:pt-0">
             {navItems.map(({ to, label, end }) => (
               <NavLink
                 key={to}

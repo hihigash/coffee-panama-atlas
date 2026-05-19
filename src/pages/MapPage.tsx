@@ -33,12 +33,12 @@ export default function MapPage() {
 
   return (
     <section className="relative h-[calc(100dvh-64px)] min-h-[calc(100dvh-64px)]">
-      <div className="pointer-events-none absolute left-3 right-3 top-3 z-[500] rounded-2xl bg-white/95 p-4 shadow-lg ring-1 ring-neutral-200 backdrop-blur dark:bg-neutral-900/95 dark:ring-neutral-800 sm:left-4 sm:right-auto sm:top-4 sm:max-w-sm">
-        <h1 className="text-base font-semibold text-neutral-900 sm:text-lg dark:text-white">Panama coffee map</h1>
-        <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-300">
+      <div className="pointer-events-none absolute left-3 right-3 top-3 z-[500] rounded-2xl bg-brand-950/95 p-5 backdrop-blur-md ring-1 ring-brand-800 sm:left-4 sm:right-auto sm:top-4 sm:max-w-sm">
+        <h1 className="font-display text-lg font-semibold text-white sm:text-2xl">Panama coffee map</h1>
+        <p className="mt-1 text-sm text-white/60">
           Explore farm locations across Chiriquí and jump into detail pages from each marker.
         </p>
-        <p className="mt-2 text-sm font-medium text-neutral-700 dark:text-neutral-200">
+        <p className="mt-3 text-sm font-medium text-brand-300">
           Showing {markerFarms.length} of {farms.length} farms with coordinates
         </p>
       </div>
@@ -57,14 +57,17 @@ export default function MapPage() {
               <Popup>
                 <div className="space-y-2">
                   <div>
-                    <p className="font-semibold">{farm.name}</p>
-                    <p className="text-sm text-neutral-600">{producerGroup?.name ?? 'Unknown producer'}</p>
-                    <p className="text-sm text-neutral-600">{getRegionName(farm.region)}</p>
-                    <p className="text-sm text-neutral-600">
+                    <p className="font-semibold text-brand-800">{farm.name}</p>
+                    <p className="text-sm text-brand-500">{producerGroup?.name ?? 'Unknown producer'}</p>
+                    <p className="text-sm text-brand-400">{getRegionName(farm.region)}</p>
+                    <p className="text-sm text-brand-400">
                       {formatAltitudeRange(farm.altitude.minMASL, farm.altitude.maxMASL)}
                     </p>
                   </div>
-                  <Link to={`/farms/${farm.slug}`} className="text-sm font-semibold text-coffee-700">
+                  <Link
+                    to={`/farms/${farm.slug}`}
+                    className="text-sm font-semibold text-brand-600 transition hover:text-brand-500"
+                  >
                     View farm →
                   </Link>
                 </div>

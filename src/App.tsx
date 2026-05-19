@@ -12,8 +12,8 @@ const RegionPage = lazy(() => import('./pages/RegionPage'))
 
 function LoadingSpinner() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-neutral-50 px-4 dark:bg-neutral-950">
-      <div className="h-12 w-12 animate-spin rounded-full border-4 border-coffee-200 border-t-coffee-600 dark:border-neutral-700 dark:border-t-coffee-300" />
+    <div className="flex min-h-screen items-center justify-center bg-[#F2F0EB] px-4 dark:bg-brand-950">
+      <div className="h-10 w-10 animate-spin rounded-full border-2 border-brand-200 border-t-brand-500 dark:border-brand-800 dark:border-t-brand-400" />
     </div>
   )
 }

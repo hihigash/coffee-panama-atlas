@@ -11,34 +11,35 @@ export default function HomePage() {
     { label: 'Producers', value: producerGroups.length.toString() },
     { label: 'Farms', value: farms.length.toString() },
     { label: 'Regions', value: '3' },
-    { label: 'Record Price', value: '$30,204/kg' },
+    { label: 'Record Price', value: '$30,204/kg', highlight: true },
   ] as const
 
   return (
-    <div>
-      <section className="bg-coffee-50 dark:bg-neutral-900">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-6">
-            <span className="inline-flex rounded-full bg-white px-4 py-1 text-sm font-medium text-coffee-700 shadow-sm dark:bg-neutral-800 dark:text-coffee-200">
-              Specialty coffee origin atlas
-            </span>
-            <h1 className="text-3xl font-bold tracking-tight text-coffee-900 sm:text-4xl lg:text-5xl dark:text-white">
+    <div className="bg-[#F2F0EB] dark:bg-brand-950">
+      <section className="bg-brand-950">
+        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div className="max-w-3xl space-y-8">
+            <p className="text-sm font-medium uppercase tracking-widest text-gold-400">
+              Specialty Coffee Origin Atlas
+            </p>
+            <h1 className="font-display text-4xl font-light leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
               Panama Coffee Atlas
             </h1>
-            <p className="text-base leading-8 text-neutral-700 sm:text-lg dark:text-neutral-300">
-              Explore the world&apos;s most prestigious coffee origin — from Boquete to Volcán,
-              discover the farms, varieties, and auction history that make Panama coffee legendary.
+            <p className="max-w-2xl text-lg leading-relaxed text-white/60">
+              Explore the world&apos;s most prestigious coffee origin — from Boquete
+              to Volcán, discover the farms, varieties, and auction history that make
+              Panama coffee legendary.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 to="/atlas"
-                className="inline-flex items-center rounded-xl bg-coffee-600 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-coffee-700"
+                className="inline-flex items-center rounded-full bg-brand-500 px-7 py-3.5 text-sm font-semibold tracking-tight text-white shadow-sm transition-all duration-200 hover:bg-brand-400 active:scale-95"
               >
                 Explore the Atlas
               </Link>
               <Link
                 to="/map"
-                className="inline-flex items-center rounded-xl border border-coffee-300 bg-white px-5 py-3 font-semibold text-coffee-700 transition hover:border-coffee-400 hover:bg-coffee-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-coffee-200 dark:hover:bg-neutral-700"
+                className="inline-flex items-center rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold tracking-tight text-white transition-all duration-200 hover:border-white/60 hover:bg-white/5 active:scale-95"
               >
                 View Map
               </Link>
@@ -47,17 +48,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900"
+              className="relative rounded-2xl border border-brand-100 bg-white p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_1px_2px_rgba(0,0,0,0.06)] dark:border-brand-800 dark:bg-brand-900"
             >
-              <p className="text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/40 to-transparent" />
+              <p className="text-xs font-medium uppercase tracking-widest text-brand-400 dark:text-brand-300">
                 {stat.label}
               </p>
-              <p className="mt-3 text-xl font-bold text-coffee-700 sm:text-2xl dark:text-coffee-200">
+              <p
+                className={`mt-4 font-display text-3xl font-semibold tracking-tight ${
+                  'highlight' in stat && stat.highlight
+                    ? 'text-gold-500 dark:text-gold-400'
+                    : 'text-brand-600 dark:text-brand-200'
+                }`}
+              >
                 {stat.value}
               </p>
             </div>
